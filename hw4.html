@@ -1,0 +1,285 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @media screen and (min-width: 350px) and (max-width: 450px)) {
+        .Mobile {
+          display: block;
+        }
+        body {
+          background-color: lightblue;
+        }
+      }
+      @media screen and (min-width: 700px) and (max-width: 900px) {
+        .Tablet {
+          display: block;
+        }
+        body {
+          background-color: lightgreen;
+        }
+      }
+      @media screen and (min-width: 1300) and (max-width: 1500px) {
+        .Desktop {
+          display: block;
+        }
+        body {
+          background-color: lightseagreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Welcome to Disney World!</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://en.wikipedia.org/wiki/The_Walt_Disney_Company">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Content
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li><a class="dropdown-item" href="#">Company Units</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Film Library</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex my-auto">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/disney-plus-disney-movies-index-1596644297.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="http://1.bp.blogspot.com/-5qtWSOGn9AI/UidRN5YaTCI/AAAAAAAAAYc/kEZYjs4fm8A/s1600/7951-disney-disney-characters.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://filmdaily.co/wp-content/uploads/2020/02/disney-lede-1300x813.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="card h-100" class="card border">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BODRlNTk4ZDktNzg4NC00MWRmLWE0ODctOWRkNTE1MGEyNTk5XkEyXkFqcGdeQXVyMzM4NjcxOTc@._V1_FMjpg_UX1000_.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The first movie of Disney</h5>
+
+              <p class="card-text">Mickey Mouse is an animated cartoon character co-created in 1928 by Walt Disney and Ub Iwerks. The longtime mascot of The Walt Disney Company, Mickey is an anthropomorphic mouse who typically wears red shorts, large yellow shoes, and white gloves. Taking inspiration from such silent film personalities as Charlie Chaplin’s Tramp, Mickey is traditionally characterized as a sympathetic underdog who gets by on pluck and ingenuity.[2] The character’s status as a small mouse was personified through his diminutive stature and falsetto voice, the latter of which was originally provided by Disney. Mickey is one of the world's most recognizable and universally acclaimed fictional characters of all time.</p>
+              <a href="#" class="btn btn-primary">Watch this movie</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card h-100">
+            <img
+              src="https://amc-theatres-res.cloudinary.com/v1579120219/amc-cdn/production/2/movies/53700/53728/Poster/p_800x1200_TheLionKing2019_En_10092019.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The most successful production of Disney</h5>
+
+              <p class="card-text"> The Lion King is a 1994 American animated musical drama film[4] directed by Roger Allers and Rob Minkoff (in their feature directorial debuts), produced by Walt Disney Feature Animation and released by Walt Disney Pictures. The 32nd Disney animated feature film and the fifth produced during the Disney Renaissance, the film is inspired by William Shakespeare's Hamlet with elements from the Biblical stories of Joseph and Moses and Disney's 1942 film Bambi. It was written by Irene Mecchi, Jonathan Roberts, and Linda Woolverton. The film features an ensemble voice cast that includes Matthew Broderick, James Earl Jones, Jeremy Irons, Jonathan Taylor Thomas, Nathan Lane, Ernie Sabella, Rowan Atkinson and Robert Guillaume. Its original songs were written by composer Elton John and lyricist Tim Rice, with a score by Hans Zimmer. </p>
+              <a href="#" class="btn btn-primary">Watch this movie</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card h-100">
+            <img
+              src="https://lumiere-a.akamaihd.net/v1/images/p_pinocchio_19879_d6304938.jpeg?region=0%2C0%2C540%2C810"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The highest rated Disney movie</h5>
+
+              <p class="card-text">Pinocchio is a 2022 American musical fantasy film directed by Robert Zemeckis from a screenplay by Zemeckis and Chris Weitz. Produced by Walt Disney Pictures, the film is a live-action remake of Walt Disney's 1940 animated film of the same name, which is itself based on the 1883 Italian book The Adventures of Pinocchio, by Carlo Collodi. It stars Tom Hanks, Cynthia Erivo, Giuseppe Battiston and Luke Evans with Benjamin Evan Ainsworth, Joseph Gordon-Levitt, Keegan-Michael Key, and Lorraine Bracco in voice roles.</p>
+              <a href="#" class="btn btn-primary">Watch this movie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
